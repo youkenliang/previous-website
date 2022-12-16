@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta name="author" content="Youcan Liang">
+        <meta name="description" content="Youcan Liang's 108 space">
+        <title>The 108 Space</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+    <div class="directory">
+        <div class="d0">
+            Song of the Month
+            <img src="paused.png" id="icon">
+        </div>
+        <div class="d1"> About </div>
+        <div class="d2"> Work</div>
+        <div class="d3"> Contact</div>
+    </div>
+
+    <div class="about ">
+        <div class="name"> Youcan Liang</div>
+        <div class=" intro"> 
+            <h2>Hey! Welcome to the 108 space!</h2>
+            <br/>
+            <h4>I am a physics undergrad at UC Berkeley.
+            When I don't struggle with homework, I like to play 
+            basketball, travel, and discover new restaurants.
+            </h4>
+        </div>
+    </div>
+
+    <div class="work">
+        <div class="w1"> 
+            <iframe src="https://drive.google.com/file/d/1uPvvKDy1eoqkeVpyEgmqvapaMfY2i6Fs/preview" width="480" height="360" allow="autoplay"></iframe> 
+        </div>
+        <div class="w1s">  
+            <h5>Audio-Reactive LED System </h5>  
+            In Physics 111A, my teammate and I created a synchronized "lightshow" for a pre-downloaded sound file. 
+            <br/><br/>
+            Each set of LED lightbulbs corresponds to a frequency range. 
+            When the frequecy is detected and determined to be in a specific range, 
+            <br/>
+            the corresponding lightbulb will be triggered.
+        </div>
+        <div class=" w2"> 
+            <iframe src="https://drive.google.com/file/d/1epuFYnEsAye5P417ePkAHbBI1uumc-mV/preview" width="480" height="360" allow="autoplay"></iframe>
+        </div>
+        <div class=" w2s"> 
+            <h5>Air Cannon Science Project </h5>  
+            At Longfellow Middle School, I volunteered to mentor students on their science project.
+            <br/><br/>
+            We used apples and a pre-built air cannon to explore "how does increase PSI(20/40/60) 
+            of an air cannon affect the distance a projectile flies away from the barrel?"
+        </div>
+    </div>
+
+    <br>
+
+    <div class="contact">
+        <h1> Start  A  Conversation </h1>
+        <div class = "input">
+            <form>
+                <label>Name:</label><br/>
+                <input required />
+                <br/><br/>
+                Email:<br/>
+                <input required />
+                <br/><br/>
+                Message:<br/>
+                <textarea rows="5" cols="50" required></textarea>
+                <br/><br/>
+                <input type="submit" >
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="bottom">
+        <div id="logo"> 108</div>
+        <div class="info">
+            <h3> Address: The 108 Space, Berkeley, CA</h3>
+            <h3>Email: youcanliang@berkeley.edu </h3>
+            <h3>Hours: 8:10am - 5:00pm </h3>
+            
+        </div>
+        <div class="socialmedia"> 
+            <a href="https://www.instagram.com/you_ken_liang/?hl=en" target=" blank">
+                <img src="instagram_logo.png"  width="50px" height="50px"alt="Intagram"></a>
+            <br/><br/>
+                <a href="https://linkedin.com/in/youcanliang/" target="_blank">
+                <img src="linkedin_logo.png"  width="50px" height="50px"alt="linkedin"></a>
+            <br/><br/>
+            <img src="email_logo.png"  width="50px" height="50px"alt="Emil">
+        </div>
+    </div>
+
+    <audio id="mySong">
+        <source src="lettinggo.mp3" type="audio/mp3">
+    </audio>
+
+    <script>  
+        var date = new Date();
+        var month = date.toLocaleString('default', { month: 'long' })
+        alert(`Give ${month} a big OK!`);
+    </script>
+
+    <script>
+        var mySong = document.getElementById("mySong");
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function(){
+            if(mySong.paused) {
+                mySong.play();
+                icon.src = "play.png";
+            }else{
+                mySong.pause();
+                icon.src = "paused.png";
+            }
+        }
+    </script>
+   
+    </body>
+    </html>
+
+    

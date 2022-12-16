@@ -1,0 +1,120 @@
+.directory {
+    display: flex;
+    flex-direction: row;
+    justify-content:end;
+    background-color: #003262;
+    color:white;
+}
+.d0{
+    display: flex;
+    margin-right: 5rem;
+    margin-top: 1rem;
+}
+#icon{
+    width:25px;
+    cursor:pointer;
+    margin-left: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.d1{
+    display: flex;
+    margin-right: 5rem;
+    margin-top: 1rem;
+}
+.d2{
+    display: flex;
+    margin-right: 5rem;
+    margin-top: 1rem;
+}
+.d3{
+    display: flex;
+    margin-right: 5rem;
+    margin-top: 1rem;
+}
+
+
+
+/* about */
+.about {
+    display: grid;
+    grid-auto-columns: auto;
+    column-gap: 20%;
+    margin: 5rem
+}
+
+.name {
+    font-size: xx-large;
+    font-family: cursive; 
+    grid-column: 1/2
+}
+
+.intro{
+    font-family: 'Times New Roman' ;
+    grid-column: 2/3
+}
+
+
+
+/*work */
+.work {
+    display: grid;
+    grid-auto-columns: auto;
+    column-gap: 5%;
+    row-gap: 5%;
+    margin: 5rem
+    
+}
+.w1 {
+    
+    grid-column: 1/2
+}
+.w1s {
+    font-family: 'Times New Roman';
+    grid-column: 2/3 
+}
+.w2 {
+    grid-column: 1/2;
+}
+.w2s {
+    font-family: 'Times New Roman';
+    grid-column: 2/3 
+}
+
+
+/* contact */
+.contact{
+    display: grid;
+    font-family: 'Times New Roman';
+    margin: 5rem; 
+}
+
+
+
+/* bottom */
+.bottom{
+    background-color:#003262;
+    display: grid;
+    color: white;
+    grid-auto-columns: auto;
+    justify-content: center;
+    align-items:center; 
+}
+#logo{
+    display: grid;
+    font-size: 100px;
+    grid-column: 1/2;
+    margin: 1rem;
+}
+.bottom:hover{color:#FDB515;}
+
+.info{
+    display:grid
+    grid-column= 2/3;
+    margin: 6rem
+}
+.socialmedia{
+    display: grid;
+    font-size: large;
+    grid-column: 3/4;
+    margin: 1rem;
+}
